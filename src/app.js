@@ -3,6 +3,7 @@ const helmet = require("helmet");
 const xss = require("xss-clean");
 const cors = require("cors");
 const httpStatus = require("http-status");
+const mongoSanitize = require("express-mongo-sanitize");
 const routes = require("./routes/v1");
 const ApiError = require("./utils/ApiError");
 
@@ -17,6 +18,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use(xss());
+app.use(mongoSanitize());
 
 app.use(cors());
 app.options("*", cors());
