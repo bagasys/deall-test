@@ -1,8 +1,9 @@
 const express = require("express");
 const helmet = require("helmet");
 const xss = require("xss-clean");
-const routes = require("./routes/v1");
 const cors = require("cors");
+const httpStatus = require("http-status");
+const routes = require("./routes/v1");
 
 const { errorHandler, errorConverter } = require("./middlewares/error");
 
@@ -20,6 +21,10 @@ app.use(cors());
 app.options("*", cors());
 
 app.use("/v1", routes);
+
+app.use((req, res, next) => {
+  next(new ApiError(httpStatus.NOT_FOUND, "Not found"));
+});
 
 app.use(errorConverter);
 
