@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/bagasys/deall-test#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
     "cross-env": "^7.0.3",
     "dotenv": "^16.0.3",
@@ -29,6 +30,7 @@
     "joi": "^17.7.0",
     "mongoose": "^6.8.0",
     "nodemon": "^2.0.20",
+    "validator": "^13.7.0",
     "xss-clean": "^0.1.1"
   }
 }
