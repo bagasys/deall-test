@@ -1,9 +1,10 @@
-const { userService } = require('../services');
+const { userService } = require("../services");
+const catchAsync = require("../utils/catchAsync");
 
-const getUsers = (req, res) => {
-    const users =  userService.getUsers();
-    res.send(users);
-};
+const getUsers = catchAsync(async (req, res) => {
+  const users = await userService.getUsers();
+  res.send(users);
+});
 
 module.exports = {
   getUsers,
