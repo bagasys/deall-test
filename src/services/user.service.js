@@ -1,7 +1,15 @@
+const { User } = require("../models");
+
 const getUsers = async () => {
-  return ["1", "2", "3", "4"];
+  const users = await User.find();
+  return users;
+};
+
+const createUser = async (spec) => {
+  return User.create(spec);
 };
 
 module.exports = {
   getUsers,
+  createUser,
 };

@@ -4,6 +4,7 @@ const xss = require("xss-clean");
 const cors = require("cors");
 const httpStatus = require("http-status");
 const routes = require("./routes/v1");
+const ApiError = require("./utils/ApiError");
 
 const { errorHandler, errorConverter } = require("./middlewares/error");
 
