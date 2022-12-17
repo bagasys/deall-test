@@ -1,5 +1,6 @@
 const app = require("./app");
+const config = require("./config/config");
 
-server = app.listen(3000, () => {
-  console.log("server is running on PORT 3000");
+server = app.listen(config.port, () => {
+  console.log(`server is running on PORT ${config.port} in ${config.env} env`);
 });
