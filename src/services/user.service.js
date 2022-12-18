@@ -45,10 +45,15 @@ const deleteUserById = async (userId) => {
   return user;
 };
 
+const getUserByEmail = async (email) => {
+  return User.findOne({ email });
+};
+
 module.exports = {
   createUser,
   getUsers,
   getUserById,
   updateUserById,
   deleteUserById,
+  getUserByEmail,
 };

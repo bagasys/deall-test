@@ -18,7 +18,7 @@ content-type: application/json
 
 {
     "name": "bagasys3",
-    "email": "a@gmail.com",
+    "email": "bagasys3@gmail.com",
     "role": "admin",
     "password": "12345678a"
 }
@@ -33,3 +33,35 @@ DELETE http://localhost:3000/v1/users/639dad912f65b6c309d67565/
 content-type: application/json
 
 
+### login
+POST http://localhost:3000/v1/auth/login/
+content-type: application/json
+
+{
+    "email": "bagasys3@gmail.com",
+    "password": "12345678a"
+}
+
+### logout
+POST http://localhost:3000/v1/auth/logout/
+content-type: application/json
+
+{
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MzlkYWQ5MTJmNjViNmMzMDlkNjc1NjUiLCJpYXQiOjE2NzEzNTA4ODUsImV4cCI6MTY3MTQzNzI4NSwidHlwZSI6InJlZnJlc2gifQ.mn4V8tacf2dfIqHvbtVlYxt1mfLVUByFZ3bZku5gW60"
+}
+
+### refresh token
+POST http://localhost:3000/v1/auth/refresh-token/
+content-type: application/json
+
+{
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MzlkYWQ5MTJmNjViNmMzMDlkNjc1NjUiLCJpYXQiOjE2NzEzNTA0MjAsImV4cCI6MTY3MTQzNjgyMCwidHlwZSI6InJlZnJlc2gifQ.M-pjSdpD5sWcmkYygTA0rKdqXPvV-5cgyl0Snq4EW4I"
+}
+
+### refresh token
+POST http://localhost:3000/v1/auth/refresh-token/
+content-type: application/json
+
+{
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MzlkYWQ5MTJmNjViNmMzMDlkNjc1NjUiLCJpYXQiOjE2NzEzNTA2OTgsImV4cCI6MTY3MTQzNzA5OCwidHlwZSI6InJlZnJlc2gifQ.lRYrvTnyps7ZSdSYfe2XeeyK9A6CrM_--tIpni4uFj4"
+}
