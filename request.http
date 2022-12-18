@@ -1,24 +1,28 @@
 ### get
 GET http://localhost:3000/v1/users/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MzlmNDAyZDUwNWQzOTllZmU2N2VkYzYiLCJpYXQiOjE2NzEzODEwNTQsImV4cCI6MTY3MTM4Mjg1NCwidHlwZSI6ImFjY2VzcyJ9.3CIzwiDCDODDtdf9unGzrRK6ZZ5JC0TZhazpkxvcgoU
 
 ### post
 POST http://localhost:3000/v1/users/
 content-type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MzlmNDAyZDUwNWQzOTllZmU2N2VkYzYiLCJpYXQiOjE2NzEzODEwNTQsImV4cCI6MTY3MTM4Mjg1NCwidHlwZSI6ImFjY2VzcyJ9.3CIzwiDCDODDtdf9unGzrRK6ZZ5JC0TZhazpkxvcgoU
+
 
 {
-    "name": "bagas",
-    "email": "bagasys3@gmail.com",
+    "name": "normal user",
+    "email": "normal_user@gmail.com",
     "password": "12345678a",
-    "role": "admin"
+    "role": "user"
 }
 
 ### post
 PATCH http://localhost:3000/v1/users/639dad912f65b6c309d67565/
 content-type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MzlmNDAyZDUwNWQzOTllZmU2N2VkYzYiLCJpYXQiOjE2NzEzODEwNTQsImV4cCI6MTY3MTM4Mjg1NCwidHlwZSI6ImFjY2VzcyJ9.3CIzwiDCDODDtdf9unGzrRK6ZZ5JC0TZhazpkxvcgoU
 
 {
     "name": "bagasys3",
-    "email": "bagasys3@gmail.com",
+    "email": "admin@gmail.com",
     "role": "admin",
     "password": "12345678a"
 }
@@ -26,11 +30,15 @@ content-type: application/json
 ### get by id
 GET http://localhost:3000/v1/users/639dad912f65b6c309d67565/
 content-type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MzlmM2I0OWNhMTFjYWYxYmNlOGI0MWIiLCJpYXQiOjE2NzEzODA4NzUsImV4cCI6MTY3MTM4MjY3NSwidHlwZSI6ImFjY2VzcyJ9.8w6p0vwd-lz_vjFUAB1TRqldnNyjy3gTqHrgCAmRpsA
+
 
 
 ### delete
-DELETE http://localhost:3000/v1/users/639dad912f65b6c309d67565/
+DELETE http://localhost:3000/v1/users/639f3b49ca11caf1bce8b41b/
 content-type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MzlmNDAyZDUwNWQzOTllZmU2N2VkYzYiLCJpYXQiOjE2NzEzODEwNTQsImV4cCI6MTY3MTM4Mjg1NCwidHlwZSI6ImFjY2VzcyJ9.3CIzwiDCDODDtdf9unGzrRK6ZZ5JC0TZhazpkxvcgoU
+
 
 
 ### login
@@ -38,7 +46,7 @@ POST http://localhost:3000/v1/auth/login/
 content-type: application/json
 
 {
-    "email": "bagasys3@gmail.com",
+    "email": "admin1@gmail.com",
     "password": "12345678a"
 }
 

@@ -4,6 +4,8 @@ const xss = require("xss-clean");
 const cors = require("cors");
 const httpStatus = require("http-status");
 const mongoSanitize = require("express-mongo-sanitize");
+const passport = require("passport");
+const { jwtStrategy } = require("./config/passport");
 const routes = require("./routes/v1");
 const ApiError = require("./utils/ApiError");
 
@@ -22,6 +24,9 @@ app.use(mongoSanitize());
 
 app.use(cors());
 app.options("*", cors());
+
+app.use(passport.initialize());
+passport.use("jwt", jwtStrategy);
 
 app.use("/v1", routes);
 
