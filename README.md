@@ -29,21 +29,21 @@ You have 5x24 hours to work on the challenge & please submit directly through De
 
 #### Login
 
-![](/home/bagasys/projects/deall-test/data-for-readme/deall-login.jpg)
+![](./data-for-readme/deall-login.jpg)
 
 #### Refresh Token
 
 
 
-![](/home/bagasys/projects/deall-test/data-for-readme/deall-refresh token.jpg)-
+![](./data-for-readme/deall-refresh token.jpg)-
 
 #### Access Guarded Endpoints
 
-![](/home/bagasys/projects/deall-test/data-for-readme/deall-access guarded endpoint.jpg)
+![](./data-for-readme/deall-access guarded endpoint.jpg)
 
 #### Access Unguarded Endpoint
 
-![](/home/bagasys/projects/deall-test/data-for-readme/deall-access unguarded endpoint.jpg)
+![](./data-for-readme/deall-access unguarded endpoint.jpg)
 
 
 
