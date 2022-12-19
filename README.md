@@ -102,10 +102,10 @@ it will create an admin user with credentials of
 
 ### Screenshots of Local Deployment
 
-![get-pods](/home/bagasys/projects/deall-test/data-for-readme/get-pods.png)
+![get-pods](./data-for-readme/get-pods.png)
 
-![service-url](/home/bagasys/projects/deall-test/data-for-readme/service-url.png)
+![service-url](./data-for-readme/service-url.png)
 
-![api-example-2](/home/bagasys/projects/deall-test/data-for-readme/api-example-2.png)
+![api-example-2](./data-for-readme/api-example-2.png)
 
-![api-call-example-1](/home/bagasys/projects/deall-test/data-for-readme/api-call-example-1.png)
+![api-call-example-1](./data-for-readme/api-call-example-1.png)
