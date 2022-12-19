@@ -40,9 +40,8 @@ content-type: application/json
 Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MzlmNDAyZDUwNWQzOTllZmU2N2VkYzYiLCJpYXQiOjE2NzEzODEwNTQsImV4cCI6MTY3MTM4Mjg1NCwidHlwZSI6ImFjY2VzcyJ9.3CIzwiDCDODDtdf9unGzrRK6ZZ5JC0TZhazpkxvcgoU
 
 
-
 ### login
-POST http://localhost:3000/v1/auth/login/
+POST http://192.168.49.2:31930/v1/auth/login/
 content-type: application/json
 
 {
