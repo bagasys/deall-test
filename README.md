@@ -99,3 +99,13 @@ it will create an admin user with credentials of
 [postman json file](./APIs.postman_collection.json)
 
 [request.http file](./request.http)
+
+### Screenshots of Local Deployment
+
+![get-pods](/home/bagasys/projects/deall-test/data-for-readme/get-pods.png)
+
+![service-url](/home/bagasys/projects/deall-test/data-for-readme/service-url.png)
+
+![api-example-2](/home/bagasys/projects/deall-test/data-for-readme/api-example-2.png)
+
+![api-call-example-1](/home/bagasys/projects/deall-test/data-for-readme/api-call-example-1.png)
