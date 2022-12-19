@@ -35,15 +35,15 @@ You have 5x24 hours to work on the challenge & please submit directly through De
 
 
 
-![](./data-for-readme/deall-refresh token.jpg)-
+![](./data-for-readme/deall-refresh-token.jpg)-
 
 #### Access Guarded Endpoints
 
-![](./data-for-readme/deall-access guarded endpoint.jpg)
+![](./data-for-readme/deall-access-guarded-endpoint.jpg)
 
 #### Access Unguarded Endpoint
 
-![](./data-for-readme/deall-access unguarded endpoint.jpg)
+![](./data-for-readme/deall-access-unguarded-endpoint.jpg)
 
 
 
