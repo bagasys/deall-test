@@ -8,10 +8,6 @@ async function start() {
   let db_connected = false;
   while (!db_connected) {
     try {
-      console.log("-=-=-=-=-=-=-=-=-=-=-=-=-=-");
-      console.log(config.mongoose.ur);
-      console.log("-=-=-=-=-=-=-=-=-=-=-=-=-=-");
-
       await mongoose.connect(config.mongoose.url, config.mongoose.options);
       db_connected = true;
     } catch {
