@@ -96,8 +96,6 @@ it will create an admin user with credentials of
 
 ### API Documentation
 
-[Postman json file]: ./APIs.postman_collection.json
-[request.http file]: ./request.http
+[postman json file](./APIs.postman_collection.json)
 
-
-
+[request.http file](./request.http)
